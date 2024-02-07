@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45abac30.css",
+    "main.js": "/static/js/main.9e46643f.js",
+    "static/js/787.1aba1613.chunk.js": "/static/js/787.1aba1613.chunk.js",
+    "static/media/presentation_2023.jpg": "/static/media/presentation_2023.fac28f356649d657d6b4.jpg",
+    "static/media/gdsc_earth.gif": "/static/media/gdsc_earth.7acca2c591a1ade0adb2.gif",
+    "static/media/DSC09385.jpg": "/static/media/DSC09385.4a8c33e592c2a7846b5f.jpg",
+    "static/media/DSC09510.jpg": "/static/media/DSC09510.3842fc13e3984f5ab5ba.jpg",
+    "static/media/gdsc_logo.gif": "/static/media/gdsc_logo.369214017dc5334a5e28.gif",
+    "static/media/solution_challenge.png": "/static/media/solution_challenge.b556e2539f3f93417808.png",
+    "static/media/organization_chart.png": "/static/media/organization_chart.bc406d0f2e1a2c910e22.png",
+    "static/media/page2.png": "/static/media/page2.4fa708c618d44752a269.png",
+    "static/media/page3.png": "/static/media/page3.ecc4490295da0f026ff4.png",
+    "static/media/page1.png": "/static/media/page1.530b80f8ddcc9977af55.png",
+    "static/media/logo.svg": "/static/media/logo.5050f3eecb09dcefcd5ad3e4c398ae13.svg",
+    "static/media/study_jam.png": "/static/media/study_jam.14ad3c811fc7ee6e66e7.png",
+    "index.html": "/index.html",
+    "main.45abac30.css.map": "/static/css/main.45abac30.css.map",
+    "main.9e46643f.js.map": "/static/js/main.9e46643f.js.map",
+    "787.1aba1613.chunk.js.map": "/static/js/787.1aba1613.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45abac30.css",
+    "static/js/main.9e46643f.js"
+  ]
+}
