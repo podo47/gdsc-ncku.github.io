@@ -71,13 +71,7 @@ export default function RecentEvent(props:any): React.ReactElement {
             .replace("[location]", response.data.results[props.event_num].venue_name)
             ;
             setEvent_URL(currntURL);
-
-            console.log(currentYear);
-            console.log(eventYear);
-            console.log(currentMonth);
-            console.log(eventMonth);
-            console.log(currentDay);
-            console.log(eventDay);
+            
             if(eventYear>=currentYear){
                 if(eventMonth>=currentMonth){
                     if(eventDay>=currentDay){
