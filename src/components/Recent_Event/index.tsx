@@ -8,9 +8,8 @@ export default function RecentEvent(props:any): React.ReactElement {
     var currentYear = currentDate.getFullYear();
     var currentMonth = currentDate.getMonth();
     var currentDay = currentDate.getDay();
-    var currentHours = currentDate.getHours();
-    var currentMinutes = currentDate.getMinutes();
-    var render_tag = false;
+    
+    const [render_tag, setRender_tag] = useState<boolean>(false);
 
     var currntURL = "http://www.google.com/calendar/render?action=TEMPLATE&text=event&dates=[start]/[end]&details=description&location=[location]";
     let group_id = 1846;
@@ -44,11 +43,9 @@ export default function RecentEvent(props:any): React.ReactElement {
             const startDateShow = originalStart.format('MMMM Do YYYY, h:mm:ss a');
             const endDateString = originalEnd.format("YYYYMMDDTHHmmssSSSZ");
             const endDateShow = originalEnd.format('MMMM Do YYYY, h:mm:ss a');
-            var eventYear = endTimeStr.slice(0, 4);
-            var eventMonth = endTimeStr.slice(4, 6);
-            var eventDay = endTimeStr.slice(6, 8);
-            var eventHour = endTimeStr.slice(9, 11);
-            var eventMinute = endTimeStr.slice(11, 13);
+            var eventYear = endDateString.slice(0, 4);
+            var eventMonth = endDateString.slice(4, 6);
+            var eventDay = endDateString.slice(6, 8);
 
             setEvent_title(response.data.results[props.event_num].title);
             setDescription_short(response.data.results[props.event_num].description_short);
@@ -74,15 +71,12 @@ export default function RecentEvent(props:any): React.ReactElement {
             .replace("[location]", response.data.results[props.event_num].venue_name)
             ;
             setEvent_URL(currntURL);
-
-            if(eventYear>currentYear){
-                if(eventMonth>currentMonth){
-                    if(eventDay>currentDay){
-                        if(eventHour>currentHours){
-                            if(eventMinute>currentMinutes){
-                                render_tag = true;
-                            }
-                        }
+            
+            if(eventYear>=currentYear){
+                if(eventMonth>=currentMonth){
+                    if(eventDay>=currentDay){
+                        setRender_tag(true);
+                        console.log("true")
                     }
                 }
             }
